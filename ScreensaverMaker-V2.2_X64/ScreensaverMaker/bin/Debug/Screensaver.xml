@@ -1,0 +1,261 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Screensaver
+</name>
+</assembly>
+<members>
+<member name="M:Screensaver.SpriteEngine.ScreensaverCore.#ctor">
+	<summary>
+ Creates a new <see cref="N:Screensaver"/> that runs one window per screen.
+ </summary>
+</member><member name="E:Screensaver.SpriteEngine.ScreensaverCore.Exit">
+	<summary>
+ Occurs before the screensaver windows close.
+ </summary>
+</member><member name="E:Screensaver.SpriteEngine.ScreensaverCore.OneSecondTick">
+	<summary>
+ Occurs once each second on a thread separate from the window thread.
+ </summary>
+</member><member name="P:Screensaver.SpriteEngine.ScreensaverCore.framerate">
+	<summary>
+ Gets or sets the target framerate.
+ </summary>
+</member><member name="E:Screensaver.SpriteEngine.ScreensaverCore.Update">
+	<summary>
+ Occurs when the screensaver should process its logic and render.
+ </summary>
+</member><member name="P:Screensaver.SpriteEngine.ScreensaverCore.achievedFramerate">
+	<summary>
+ Actual framerate achieved. This value is updated once each second.
+ </summary>
+</member><member name="M:Screensaver.SpriteEngine.ScreensaverCore.run">
+	<summary>
+ Start the screensaver in windowed mode if the file extension is not scr, unless a mode is specified in the command line.
+ Otherwise, if the file extension is scr, start the screensaver in config mode.
+ </summary>
+</member><member name="M:Screensaver.SpriteEngine.ScreensaverCore.run(Screensaver.SpriteEngine.ScreensaverMode)">
+	<summary>
+ Start the screensaver in the specified mode unless one is specified in the command line.
+ </summary>
+	<param name="mode">The mode in which to run the screensaver. This value cannot be <see cref="F:Screensaver.SpriteEngine.ScreensaverMode.Preview"/>.</param>
+</member><member name="P:Screensaver.SpriteEngine.ScreensaverCore.mode">
+	<summary>
+ Gets the current running mode of the screensaver.
+ </summary>
+</member><member name="E:Screensaver.SpriteEngine.ScreensaverCore.Initialize">
+	<summary>
+ Occurs after the windows are created, before the screensaver runs.
+ </summary>
+</member><member name="P:Screensaver.SpriteEngine.ScreensaverCore.closeOnMouseMove">
+	<summary>
+ Gets or sets a value indicating whether or not the screensaver should close when the user moves the mouse.
+ </summary>
+	<remarks>This value is <c>true</c> by default in all modes except <see cref="F:Screensaver.SpriteEngine.ScreensaverMode.Windowed"/>.</remarks>
+</member><member name="P:Screensaver.SpriteEngine.ScreensaverCore.closeOnClick">
+	<summary>
+ Gets or sets a value indicating whether or not the screensaver should close when the user clicks the mouse.
+ </summary>
+	<remarks>This value is <c>true</c> by default in all modes except <see cref="F:Screensaver.SpriteEngine.ScreensaverMode.Windowed"/>.</remarks>
+</member><member name="P:Screensaver.SpriteEngine.ScreensaverCore.closeOnKeyboardInput">
+	<summary>
+ Gets or sets a value indicating whether or not the screensaver should close when the user presses a key.
+ </summary>
+	<remarks>This value is <c>true</c> by default in all modes except <see cref="F:Screensaver.SpriteEngine.ScreensaverMode.Windowed"/>.</remarks>
+</member><member name="P:Screensaver.SpriteEngine.ScreensaverCore.windows">
+	<summary>
+ Gets a collection of all of the running screensaver windows.
+ </summary>
+</member><member name="P:Screensaver.SpriteEngine.ScreensaverCore.window0">
+	<summary>
+ Gets the primary screensaver window.
+ </summary>
+</member><member name="P:Screensaver.SpriteEngine.ScreensaverCore.graphics0">
+	<summary>
+ Gets the GDI graphics object for the primary window.
+ </summary>
+</member><member name="P:Screensaver.SpriteEngine.ScreensaverCore.settingsText">
+	<summary>
+ Gets or sets text to be displayed in the default settings message box.
+ </summary>
+</member><member name="M:Screensaver.SpriteEngine.ScreensaverCore.showSettingsDialog">
+	<summary>
+ Shows the settings dialog, or, by default, shows a message box indicating the assembly name, version and copyright information.
+ </summary>
+</member><member name="P:Screensaver.SpriteEngine.ScreensaverCore.Window.doubleBuffer">
+	<summary>
+ Gets or sets a value indicating whether or not the Graphics object should be double buffered.
+ Set to <c>false</c> if the Graphics object will not be used.
+ </summary>
+</member><member name="E:Screensaver.SpriteEngine.ScreensaverCore.Window.MouseMove">
+	<summary>
+ Occurs when the mouse is moved over this window.
+ </summary>
+</member><member name="E:Screensaver.SpriteEngine.ScreensaverCore.Window.MouseClick">
+	<summary>
+ Occurs when the mouse is clicked inside this window.
+ </summary>
+</member><member name="E:Screensaver.SpriteEngine.ScreensaverCore.Window.MouseDoubleClick">
+	<summary>
+ Occurs when the mouse is double clicked inside this window.
+ </summary>
+</member><member name="E:Screensaver.SpriteEngine.ScreensaverCore.Window.MouseWheel">
+	<summary>
+ Occurs when the mouse wheel is moved inside this window.
+ </summary>
+</member><member name="E:Screensaver.SpriteEngine.ScreensaverCore.Window.MouseUp">
+	<summary>
+ Occurs when a mouse button goes up inside this window.
+ </summary>
+</member><member name="E:Screensaver.SpriteEngine.ScreensaverCore.Window.MouseDown">
+	<summary>
+ Occurs when a mouse button goes down inside this window.
+ </summary>
+</member><member name="E:Screensaver.SpriteEngine.ScreensaverCore.Window.KeyDown">
+	<summary>
+ Occurs when a key goes down.
+ </summary>
+</member><member name="E:Screensaver.SpriteEngine.ScreensaverCore.Window.KeyUp">
+	<summary>
+ Occurs when a key is released.
+ </summary>
+</member><member name="E:Screensaver.SpriteEngine.ScreensaverCore.Window.KeyPress">
+	<summary>
+ Occurs when a key is pressed.
+ </summary>
+</member><member name="P:Screensaver.SpriteEngine.ScreensaverCore.Window.tag">
+	<summary>
+ Gets or sets a tag value.
+ </summary>
+</member><member name="P:Screensaver.SpriteEngine.ScreensaverCore.Window.screensaver">
+	<summary>
+ Gets the <see cref="P:Screensaver.SpriteEngine.ScreensaverCore.Window.screensaver"/> for which this window was created.
+ </summary>
+</member><member name="P:Screensaver.SpriteEngine.ScreensaverCore.Window.form">
+	<summary>
+ Gets the form encapsulating this window.
+ This property is <c>null</c> if the screensaver is running in preview mode.
+ </summary>
+</member><member name="P:Screensaver.SpriteEngine.ScreensaverCore.Window.handle">
+	<summary>
+ Gets the native handle of the window.
+ </summary>
+</member><member name="P:Screensaver.SpriteEngine.ScreensaverCore.Window.size">
+	<summary>
+ Gets the size of the window.
+ </summary>
+</member><member name="P:Screensaver.SpriteEngine.ScreensaverCore.Window.graphics">
+	<summary>
+ Gets the GDI graphics object for this window.
+ </summary>
+</member><member name="P:Screensaver.SpriteEngine.ScreensaverCore.Window.screen">
+	<summary>
+ Gets the screen on which this window resides
+ </summary>
+</member><member name="P:Screensaver.SpriteEngine.ScreensaverCore.Window.deviceIndex">
+	<summary>
+ Gets the display device index to use with this window.
+ </summary>
+</member><member name="T:Screensaver.SpriteEngine.ScreensaverCore.Window">
+	<summary>
+ Represents a screensaver window.
+ </summary>
+</member><member name="P:Screensaver.SpriteEngine.ScreensaverCore.WindowCollection.item(System.Int32)">
+	<summary>
+ Gets the window at the given index.
+ </summary>
+	<param name="index">The zero-based index of the screensaver window.</param>
+	<returns>The window at hte given index.</returns>
+</member><member name="P:Screensaver.SpriteEngine.ScreensaverCore.WindowCollection.count">
+	<summary>
+ Gets the number of screensaver windows available.
+ </summary>
+</member><member name="T:Screensaver.SpriteEngine.ScreensaverCore.WindowCollection">
+	<summary>
+ Represents a collection of screensaver windows.
+ </summary>
+</member><member name="T:Screensaver.SpriteEngine.ScreensaverCore">
+	<summary>
+ Provides initialization, timing and windowing facilities for screensavers.
+ </summary>
+</member><member name="F:Screensaver.SpriteEngine.FullscreenMode.SingleWindow">
+	<summary>
+ Single window covering all monitors.
+ </summary>
+</member><member name="F:Screensaver.SpriteEngine.FullscreenMode.MultipleWindows">
+	<summary>
+ Multiple windows, one for each monitor.
+ </summary>
+</member><member name="T:Screensaver.SpriteEngine.FullscreenMode">
+	<summary>
+ Specifies the types of multiple monitor support to make available.
+ </summary>
+</member><member name="F:Screensaver.SpriteEngine.ScreensaverMode.Settings">
+	<summary>
+ Show a the settings dialog.
+ </summary>
+</member><member name="F:Screensaver.SpriteEngine.ScreensaverMode.Preview">
+	<summary>
+ Render inside the preview box of the Windows Display Properties.
+ </summary>
+</member><member name="F:Screensaver.SpriteEngine.ScreensaverMode.Normal">
+	<summary>
+ Run the screensaver in full screen mode.
+ </summary>
+</member><member name="F:Screensaver.SpriteEngine.ScreensaverMode.Windowed">
+	<summary>
+ Run the screensaver inside a fixed-sized window.
+ </summary>
+</member><member name="T:Screensaver.SpriteEngine.ScreensaverMode">
+	<summary>
+ Specifies the mode in which to run the screensaver.
+ </summary>
+</member><member name="M:Screensaver.SpriteEngine.EmbeddedAssembly.preLoad(System.String,System.String)">
+	<summary>
+ Load Assembly, DLL from Embedded Resources into memory.
+ </summary>
+	<param name="embeddedResource">Embedded Resource string. Example: WindowsFormsApplication1.SomeTools.dll</param>
+	<param name="fileName">File Name. Example: SomeTools.dll</param>
+</member><member name="M:Screensaver.SpriteEngine.EmbeddedAssembly.Get(System.String)">
+	<summary>
+ Retrieve specific loaded DLL/assembly from memory
+ </summary>
+	<param name="assemblyFullName"></param>
+	<returns></returns>
+</member><member name="T:Screensaver.SpriteEngine.EmbeddedAssembly">
+	<summary>
+ A class for loading Embedded Assembly
+ </summary>
+</member><member name="P:Screensaver.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Screensaver.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Screensaver.My.Resources.Resources.multiMonitorSettingsAll">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Screensaver.My.Resources.Resources.multiMonitorSettingsOne">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Screensaver.My.Resources.Resources.Snowflake">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Screensaver.My.Resources.Resources.treeSmall">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:Screensaver.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

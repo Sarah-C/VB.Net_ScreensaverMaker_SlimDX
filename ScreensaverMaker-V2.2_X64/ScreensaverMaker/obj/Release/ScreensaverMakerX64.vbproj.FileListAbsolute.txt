@@ -1,0 +1,12 @@
+C:\Users\Sarah\Documents\Visual Studio 2013\Projects\DirectX\ScreensaverMaker-V2.2_X64\ScreensaverMaker\bin\Release\Screensaver.exe.config
+C:\Users\Sarah\Documents\Visual Studio 2013\Projects\DirectX\ScreensaverMaker-V2.2_X64\ScreensaverMaker\bin\Release\Screensaver.exe
+C:\Users\Sarah\Documents\Visual Studio 2013\Projects\DirectX\ScreensaverMaker-V2.2_X64\ScreensaverMaker\bin\Release\Screensaver.pdb
+C:\Users\Sarah\Documents\Visual Studio 2013\Projects\DirectX\ScreensaverMaker-V2.2_X64\ScreensaverMaker\bin\Release\Screensaver.xml
+C:\Users\Sarah\Documents\Visual Studio 2013\Projects\DirectX\ScreensaverMaker-V2.2_X64\ScreensaverMaker\bin\Release\FastRandomX64.dll
+C:\Users\Sarah\Documents\Visual Studio 2013\Projects\DirectX\ScreensaverMaker-V2.2_X64\ScreensaverMaker\obj\Release\ScreensaverMakerX64.vbprojResolveAssemblyReference.cache
+C:\Users\Sarah\Documents\Visual Studio 2013\Projects\DirectX\ScreensaverMaker-V2.2_X64\ScreensaverMaker\obj\Release\Screensaver.Resources.resources
+C:\Users\Sarah\Documents\Visual Studio 2013\Projects\DirectX\ScreensaverMaker-V2.2_X64\ScreensaverMaker\obj\Release\Screensaver.settingsForm.resources
+C:\Users\Sarah\Documents\Visual Studio 2013\Projects\DirectX\ScreensaverMaker-V2.2_X64\ScreensaverMaker\obj\Release\ScreensaverMakerX64.vbproj.GenerateResource.Cache
+C:\Users\Sarah\Documents\Visual Studio 2013\Projects\DirectX\ScreensaverMaker-V2.2_X64\ScreensaverMaker\obj\Release\Screensaver.exe
+C:\Users\Sarah\Documents\Visual Studio 2013\Projects\DirectX\ScreensaverMaker-V2.2_X64\ScreensaverMaker\obj\Release\Screensaver.xml
+C:\Users\Sarah\Documents\Visual Studio 2013\Projects\DirectX\ScreensaverMaker-V2.2_X64\ScreensaverMaker\obj\Release\Screensaver.pdb
